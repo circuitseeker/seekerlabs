@@ -5,7 +5,7 @@ const services = [
     num: '01',
     title: 'Software Development',
     description:
-      'Full-stack web and mobile apps, cloud infrastructure, APIs, and scalable platforms. Production-grade engineering, studio speed.',
+      'Full-stack web and mobile apps, cloud infrastructure, APIs, and scalable platforms. Production-grade engineering, startup speed.',
   },
   {
     num: '02',
