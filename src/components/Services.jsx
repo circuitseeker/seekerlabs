@@ -45,13 +45,13 @@ export default function Services() {
                   key={service.title}
                   className="brutal-card p-7 stagger-child"
                 >
-                  <span className="font-heading text-[11px] font-bold text-[#C8943E] bg-[#4A6274] inline-block px-2 py-1 mb-4 tracking-wider">
+                  <span className="font-heading text-[11px] font-bold text-[#DDFC6B] bg-[#0a0a0a] inline-block px-2 py-1 mb-4 tracking-wider">
                     {service.num}
                   </span>
-                  <h3 className="text-[16px] font-heading font-bold text-[#4A6274] mb-3 tracking-[-0.02em]">
+                  <h3 className="text-[16px] font-heading font-bold text-[#0a0a0a] mb-3 tracking-[-0.02em]">
                     {service.title}
                   </h3>
-                  <p className="text-[13px] text-[#4A6274]/60 leading-[1.75]">
+                  <p className="text-[13px] text-neutral-500 leading-[1.75]">
                     {service.description}
                   </p>
                 </div>

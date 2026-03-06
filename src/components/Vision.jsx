@@ -29,7 +29,7 @@ export default function Vision() {
           </div>
           <div className="md:col-span-9">
             <div ref={headRef} className="reveal">
-              <p className="text-[26px] md:text-[34px] lg:text-[40px] font-heading font-bold leading-[1.15] tracking-[-0.03em] text-[#4A6274]">
+              <p className="text-[26px] md:text-[34px] lg:text-[40px] font-heading font-bold leading-[1.15] tracking-[-0.03em] text-[#0a0a0a]">
                 We believe the best companies are built by people who care deeply
                 about the problem, not just the opportunity.
               </p>
@@ -38,14 +38,14 @@ export default function Vision() {
               {pillars.map((item, i) => (
                 <div
                   key={item.title}
-                  className={`stagger-child p-7 border-l-[5px] border-[#4A6274] ${
-                    i === 0 ? 'bg-[#C8943E]' : 'bg-white'
+                  className={`stagger-child p-7 border-l-[5px] border-[#0a0a0a] ${
+                    i === 0 ? 'bg-[#DDFC6B]' : 'bg-white'
                   } border-y-[2.5px] border-r-[2.5px]`}
                 >
-                  <h3 className="text-[15px] font-heading font-bold text-[#4A6274] mb-2 tracking-[-0.01em]">
+                  <h3 className="text-[15px] font-heading font-bold text-[#0a0a0a] mb-2 tracking-[-0.01em]">
                     {item.title}
                   </h3>
-                  <p className={`text-[13px] leading-[1.75] ${i === 0 ? 'text-[#4A6274]/80' : 'text-[#4A6274]/60'}`}>
+                  <p className="text-[13px] text-neutral-600 leading-[1.75]">
                     {item.text}
                   </p>
                 </div>
