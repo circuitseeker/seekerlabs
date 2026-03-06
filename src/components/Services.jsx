@@ -45,7 +45,7 @@ export default function Services() {
                   key={service.title}
                   className="brutal-card p-7 stagger-child"
                 >
-                  <span className="font-heading text-[11px] font-bold text-[#DDFC6B] bg-[#0a0a0a] inline-block px-2 py-1 mb-4 tracking-wider">
+                  <span className="font-heading text-[12px] font-bold text-[#0a0a0a] inline-block mb-4 tracking-wider border-b-[3px] border-[#DDFC6B] pb-1">
                     {service.num}
                   </span>
                   <h3 className="text-[16px] font-heading font-bold text-[#0a0a0a] mb-3 tracking-[-0.02em]">
