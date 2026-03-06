@@ -19,10 +19,10 @@ export default function Contact() {
           </div>
           <div className="md:col-span-9">
             <div ref={headRef} className="reveal">
-              <p className="text-[26px] md:text-[34px] lg:text-[40px] font-heading font-bold leading-[1.15] tracking-[-0.03em] text-[#0a0a0a]">
+              <p className="text-[26px] md:text-[34px] lg:text-[40px] font-heading font-bold leading-[1.15] tracking-[-0.03em] text-[#1A4D3E]">
                 Let&rsquo;s build something<br />together.
               </p>
-              <p className="mt-6 text-[15px] text-[#0a0a0a]/70 leading-[1.8] max-w-[480px]">
+              <p className="mt-6 text-[15px] text-[#1A4D3E]/70 leading-[1.8] max-w-[480px]">
                 Have an idea worth building? Reach out and we&rsquo;ll get back to you
                 within 24 hours.
               </p>
@@ -35,10 +35,10 @@ export default function Contact() {
                   href={item.href}
                   className="brutal-card p-6 stagger-child flex-1 group"
                 >
-                  <p className="text-[11px] font-bold text-[#0a0a0a]/50 uppercase tracking-[0.14em] mb-3">
+                  <p className="text-[11px] font-bold text-[#1A4D3E]/50 uppercase tracking-[0.14em] mb-3">
                     {item.label}
                   </p>
-                  <p className="text-[17px] font-heading font-bold text-[#0a0a0a] tracking-[-0.01em] group-hover:text-[#C8943E] transition-colors">
+                  <p className="text-[17px] font-heading font-bold text-[#1A4D3E] tracking-[-0.01em] group-hover:text-[#C8943E] transition-colors">
                     {item.value}
                   </p>
                 </a>
