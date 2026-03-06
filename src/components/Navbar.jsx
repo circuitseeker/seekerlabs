@@ -22,14 +22,14 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#EDDDD0] border-b-[2.5px] border-[#1A4D3E]'
+          ? 'bg-[#FAFAFA] border-b-[2.5px] border-[#0a0a0a]'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-6 lg:px-8 h-[72px] flex items-center justify-between">
         <a
           href="#"
-          className="font-heading text-[20px] font-bold tracking-[-0.03em] text-[#1A4D3E]"
+          className="font-heading text-[20px] font-bold tracking-[-0.03em] text-[#0a0a0a]"
         >
           SeekerLabs<span className="text-[#C8943E]">.</span>
         </a>
@@ -39,7 +39,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="brutal-link text-[13px] font-semibold text-[#1A4D3E] uppercase tracking-[0.06em]"
+              className="brutal-link text-[13px] font-semibold text-[#0a0a0a] uppercase tracking-[0.06em]"
             >
               {link.label}
             </a>
@@ -48,20 +48,20 @@ export default function Navbar() {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden font-heading text-[14px] font-bold text-[#1A4D3E] uppercase tracking-[0.06em]"
+          className="md:hidden font-heading text-[14px] font-bold text-[#0a0a0a] uppercase tracking-[0.06em]"
         >
           {mobileOpen ? '✕ Close' : '☰ Menu'}
         </button>
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-[#EDDDD0] border-t-[2.5px] border-[#1A4D3E] px-6 py-8 flex flex-col gap-6">
+        <div className="md:hidden bg-[#FAFAFA] border-t-[2.5px] border-[#0a0a0a] px-6 py-8 flex flex-col gap-6">
           {links.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="font-heading text-[18px] font-bold text-[#1A4D3E] uppercase tracking-[0.02em]"
+              className="font-heading text-[18px] font-bold text-[#0a0a0a] uppercase tracking-[0.02em]"
             >
               {link.label}
             </a>

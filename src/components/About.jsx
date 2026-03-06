@@ -14,20 +14,20 @@ export default function About() {
           </div>
           <div className="md:col-span-9">
             <div ref={headRef} className="reveal">
-              <p className="text-[26px] md:text-[34px] lg:text-[40px] font-heading font-bold leading-[1.15] tracking-[-0.03em] text-[#1A4D3E]">
+              <p className="text-[26px] md:text-[34px] lg:text-[40px] font-heading font-bold leading-[1.15] tracking-[-0.03em] text-[#0a0a0a]">
                 SeekerLabs is a venture studio. We partner with founders from day zero
                 and stay through scale.
               </p>
             </div>
             <div ref={bodyRef} className="reveal">
               <div className="mt-12 brutal-card p-8 md:p-10">
-                <p className="text-[15px] text-[#1A4D3E]/70 leading-[1.8]">
+                <p className="text-[15px] text-[#0a0a0a]/70 leading-[1.8]">
                   A combined alliance of CircuitSeekers and Program Bees, established in 2021.
                   We bring together deep technical capability with growth expertise. Our model
                   is simple: we embed ourselves into your startup, share the work, share the risk,
                   and build something that lasts.
                 </p>
-                <p className="mt-6 text-[15px] text-[#1A4D3E]/70 leading-[1.8]">
+                <p className="mt-6 text-[15px] text-[#0a0a0a]/70 leading-[1.8]">
                   We&rsquo;ve helped founders go from napkin sketches to funded startups,
                   from MVPs to products with real traction. Every startup we touch gets
                   the full weight of our network, our tools, and our experience.
