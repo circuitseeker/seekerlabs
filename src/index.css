@@ -35,14 +35,14 @@ html {
 
 body {
   background-color: #EDDDD0;
-  color: #1A4D3E;
+  color: #4A6274;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background: #1A4D3E;
+  background: #4A6274;
   color: #C8943E;
 }
 
@@ -50,28 +50,28 @@ body {
 
 .brutal-card {
   background: #fff;
-  border: 2.5px solid #1A4D3E;
-  box-shadow: 5px 5px 0px #1A4D3E;
+  border: 2.5px solid #4A6274;
+  box-shadow: 5px 5px 0px #4A6274;
   transition: box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .brutal-card:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 7px 7px 0px #1A4D3E;
+  box-shadow: 7px 7px 0px #4A6274;
 }
 
 .brutal-card-accent {
   background: #C8943E;
-  border: 2.5px solid #1A4D3E;
-  box-shadow: 5px 5px 0px #1A4D3E;
+  border: 2.5px solid #4A6274;
+  box-shadow: 5px 5px 0px #4A6274;
   transition: box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .brutal-card-accent:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 7px 7px 0px #1A4D3E;
+  box-shadow: 7px 7px 0px #4A6274;
 }
 
 /* ─── Reveal animations ─── */
@@ -119,14 +119,14 @@ body {
 
 .brutal-tag {
   display: inline-block;
-  background: #1A4D3E;
+  background: #4A6274;
   color: #C8943E;
   padding: 6px 14px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  border: 2px solid #1A4D3E;
+  border: 2px solid #4A6274;
 }
 
 /* ─── Brutal link underline ─── */
@@ -158,7 +158,7 @@ body {
 
 .brutal-divider {
   border: none;
-  border-top: 2.5px solid #1A4D3E;
+  border-top: 2.5px solid #4A6274;
 }
 
 /* ─── Brutal button ─── */
@@ -168,14 +168,14 @@ body {
   align-items: center;
   gap: 10px;
   background: #C8943E;
-  color: #1A4D3E;
-  border: 2.5px solid #1A4D3E;
+  color: #4A6274;
+  border: 2.5px solid #4A6274;
   padding: 14px 28px;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: -0.01em;
-  box-shadow: 4px 4px 0px #1A4D3E;
+  box-shadow: 4px 4px 0px #4A6274;
   cursor: pointer;
   transition: box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
@@ -183,12 +183,12 @@ body {
 
 .brutal-btn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px #1A4D3E;
+  box-shadow: 6px 6px 0px #4A6274;
 }
 
 .brutal-btn:active {
   transform: translate(2px, 2px);
-  box-shadow: 0px 0px 0px #1A4D3E;
+  box-shadow: 0px 0px 0px #4A6274;
 }
 
 /* ─── Marquee ─── */
