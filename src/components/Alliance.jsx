@@ -14,17 +14,17 @@ export default function Alliance() {
           </div>
           <div className="md:col-span-9">
             <div ref={headRef} className="reveal">
-              <p className="text-[26px] md:text-[34px] lg:text-[40px] font-heading font-bold leading-[1.15] tracking-[-0.03em] text-[#0a0a0a]">
+              <p className="text-[26px] md:text-[34px] lg:text-[40px] font-heading font-bold leading-[1.15] tracking-[-0.03em] text-[#1A4D3E]">
                 Two organizations,<br />one mission.
               </p>
             </div>
             <div className="mt-12 grid sm:grid-cols-2 gap-6" ref={cardsRef}>
               <div className="brutal-card p-8 stagger-child">
                 <div className="brutal-tag mb-5">Tech</div>
-                <h3 className="text-[18px] font-heading font-bold text-[#0a0a0a] mb-3 tracking-[-0.02em]">
+                <h3 className="text-[18px] font-heading font-bold text-[#1A4D3E] mb-3 tracking-[-0.02em]">
                   CircuitSeekers
                 </h3>
-                <p className="text-[13px] text-neutral-500 leading-[1.75]">
+                <p className="text-[13px] text-[#1A4D3E]/60 leading-[1.75]">
                   The engineering and product arm. Hardware prototyping, full-stack
                   software development, AI/ML model building, and scalable cloud
                   infrastructure. From embedded systems to production-grade platforms.
@@ -32,10 +32,10 @@ export default function Alliance() {
               </div>
               <div className="brutal-card-accent p-8 stagger-child">
                 <div className="brutal-tag mb-5">Growth</div>
-                <h3 className="text-[18px] font-heading font-bold text-[#0a0a0a] mb-3 tracking-[-0.02em]">
+                <h3 className="text-[18px] font-heading font-bold text-[#1A4D3E] mb-3 tracking-[-0.02em]">
                   Program Bees
                 </h3>
-                <p className="text-[13px] text-neutral-700 leading-[1.75]">
+                <p className="text-[13px] text-[#1A4D3E]/80 leading-[1.75]">
                   The creator and growth arm. Multi-platform content strategy,
                   creator management, brand partnerships, audience development,
                   and monetization systems that turn attention into revenue.
