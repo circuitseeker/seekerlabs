@@ -11,7 +11,7 @@ const pillars = [
   },
   {
     title: 'Create ecosystem effects',
-    text: 'Our portfolio companies share talent, technology, and distribution. Each new venture makes the others stronger.',
+    text: 'Our projects share talent, technology, and distribution. Each new partnership makes the others stronger.',
   },
 ];
 
