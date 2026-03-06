@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const links = [
   { label: 'About', href: '#about' },
@@ -10,12 +10,28 @@ const links = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#fafafa]/90 backdrop-blur-sm">
-      <div className="max-w-[1120px] mx-auto px-6 h-[72px] flex items-center justify-between">
-        <a href="#" className="font-heading text-[17px] font-semibold tracking-tight text-black">
-          SeekerLabs
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-[#F2F0E6] border-b-[2.5px] border-[#0a0a0a]'
+          : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8 h-[72px] flex items-center justify-between">
+        <a
+          href="#"
+          className="font-heading text-[20px] font-bold tracking-[-0.03em] text-[#0a0a0a]"
+        >
+          SeekerLabs<span className="text-[#DDFC6B]">.</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -23,7 +39,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="hover-line text-[13px] font-medium text-neutral-400 hover:text-black transition-colors duration-200"
+              className="brutal-link text-[13px] font-semibold text-[#0a0a0a] uppercase tracking-[0.06em]"
             >
               {link.label}
             </a>
@@ -32,20 +48,20 @@ export default function Navbar() {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden text-[13px] font-medium text-neutral-400"
+          className="md:hidden font-heading text-[14px] font-bold text-[#0a0a0a] uppercase tracking-[0.06em]"
         >
-          {mobileOpen ? 'Close' : 'Menu'}
+          {mobileOpen ? '✕ Close' : '☰ Menu'}
         </button>
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-[#fafafa] border-t border-neutral-200 px-6 py-6 flex flex-col gap-5">
+        <div className="md:hidden bg-[#F2F0E6] border-t-[2.5px] border-[#0a0a0a] px-6 py-8 flex flex-col gap-6">
           {links.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="text-[15px] text-neutral-500 hover:text-black transition-colors duration-200"
+              className="font-heading text-[18px] font-bold text-[#0a0a0a] uppercase tracking-[0.02em]"
             >
               {link.label}
             </a>

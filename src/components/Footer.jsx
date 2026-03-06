@@ -6,34 +6,38 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-neutral-200 py-12 px-6">
-      <div className="max-w-[1120px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-        <div>
-          <span className="font-heading text-[15px] font-semibold tracking-tight text-black">
-            SeekerLabs
-          </span>
-          <p className="text-[13px] text-neutral-400 mt-1">
-            A combined alliance of CircuitSeekers & Program Bees. Est. 2021.
+    <footer className="px-6 lg:px-8 pb-8">
+      <div className="max-w-[1200px] mx-auto">
+        <hr className="brutal-divider mb-12" />
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10">
+          <div>
+            <span className="font-heading text-[24px] font-bold tracking-[-0.03em] text-[#0a0a0a]">
+              SeekerLabs<span className="text-[#DDFC6B]">.</span>
+            </span>
+            <p className="text-[13px] text-neutral-500 mt-2 leading-[1.6]">
+              A combined alliance of CircuitSeekers<br />
+              &amp; Program Bees. Est. 2021.
+            </p>
+          </div>
+          <div className="flex items-center gap-4">
+            {socials.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="brutal-link text-[13px] font-bold text-[#0a0a0a] uppercase tracking-[0.06em]"
+              >
+                {social.label}
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="mt-10 pt-6 border-t-[2.5px] border-[#0a0a0a]">
+          <p className="text-[12px] text-neutral-400 font-medium tracking-[0.02em]">
+            &copy; {new Date().getFullYear()} SeekerLabs. All rights reserved.
           </p>
         </div>
-        <div className="flex items-center gap-8">
-          {socials.map((social) => (
-            <a
-              key={social.label}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover-line text-[13px] font-medium text-neutral-400 hover:text-black transition-colors duration-200"
-            >
-              {social.label}
-            </a>
-          ))}
-        </div>
-      </div>
-      <div className="max-w-[1120px] mx-auto mt-8 pt-8 border-t border-neutral-100">
-        <p className="text-[13px] text-neutral-300">
-          &copy; {new Date().getFullYear()} SeekerLabs
-        </p>
       </div>
     </footer>
   );

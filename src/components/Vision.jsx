@@ -1,11 +1,13 @@
+import { useReveal, useStaggerReveal } from '../hooks/useReveal';
+
 const pillars = [
   {
     title: 'Democratize entrepreneurship',
-    text: 'The best ideas don\'t always come from the best-funded people. We provide world-class resources and access to anyone with a vision worth building.',
+    text: "The best ideas don't always come from the best-funded people. We provide world-class resources and access to anyone with a vision worth building.",
   },
   {
     title: 'Build for the long game',
-    text: 'We don\'t chase trends. Every startup we touch is designed to outlast market cycles and compound value over decades.',
+    text: "We don't chase trends. Every startup we touch is designed to outlast market cycles and compound value over decades.",
   },
   {
     title: 'Create ecosystem effects',
@@ -14,27 +16,36 @@ const pillars = [
 ];
 
 export default function Vision() {
+  const headRef = useReveal();
+  const listRef = useStaggerReveal(0.08);
+
   return (
-    <section id="vision" className="py-28 px-6 border-t border-neutral-200">
-      <div className="max-w-[1120px] mx-auto">
-        <div className="grid md:grid-cols-12 gap-12 md:gap-20">
-          <div className="md:col-span-4">
-            <h2 className="text-[13px] font-medium text-neutral-400 uppercase tracking-[0.12em]">
-              Vision
-            </h2>
+    <section id="vision" className="py-24 md:py-32 px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto">
+        <hr className="brutal-divider mb-16" />
+        <div className="grid md:grid-cols-12 gap-10 md:gap-20">
+          <div className="md:col-span-3">
+            <div className="brutal-tag">Vision</div>
           </div>
-          <div className="md:col-span-8">
-            <p className="text-[28px] md:text-[36px] font-heading font-semibold leading-[1.3] tracking-[-0.01em] text-black">
-              We believe the best companies are built by people who care deeply
-              about the problem, not just the opportunity.
-            </p>
-            <div className="mt-12 space-y-10">
-              {pillars.map((item) => (
-                <div key={item.title} className="border-l-2 border-neutral-200 pl-6 hover:border-black transition-colors duration-300">
-                  <h3 className="text-[15px] font-semibold text-black mb-2">
+          <div className="md:col-span-9">
+            <div ref={headRef} className="reveal">
+              <p className="text-[26px] md:text-[34px] lg:text-[40px] font-heading font-bold leading-[1.15] tracking-[-0.03em] text-[#0a0a0a]">
+                We believe the best companies are built by people who care deeply
+                about the problem, not just the opportunity.
+              </p>
+            </div>
+            <div className="mt-12 space-y-5" ref={listRef}>
+              {pillars.map((item, i) => (
+                <div
+                  key={item.title}
+                  className={`stagger-child p-7 border-l-[5px] border-[#0a0a0a] ${
+                    i === 0 ? 'bg-[#DDFC6B]' : 'bg-white'
+                  } border-y-[2.5px] border-r-[2.5px]`}
+                >
+                  <h3 className="text-[15px] font-heading font-bold text-[#0a0a0a] mb-2 tracking-[-0.01em]">
                     {item.title}
                   </h3>
-                  <p className="text-[13px] text-neutral-500 leading-[1.7]">
+                  <p className="text-[13px] text-neutral-600 leading-[1.75]">
                     {item.text}
                   </p>
                 </div>

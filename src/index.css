@@ -21,6 +21,8 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* ─── Base ─── */
+
 * {
   margin: 0;
   padding: 0;
@@ -32,54 +34,176 @@ html {
 }
 
 body {
-  background-color: #fafafa;
-  color: #111;
+  background-color: #F2F0E6;
+  color: #0a0a0a;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background: #111;
-  color: #fff;
+  background: #0a0a0a;
+  color: #DDFC6B;
 }
 
-/* Hover underline for links */
-.hover-line {
-  position: relative;
+/* ─── Neo-brutalist cards ─── */
+
+.brutal-card {
+  background: #fff;
+  border: 2.5px solid #0a0a0a;
+  box-shadow: 5px 5px 0px #0a0a0a;
+  transition: box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.hover-line::after {
+
+.brutal-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px #0a0a0a;
+}
+
+.brutal-card-accent {
+  background: #DDFC6B;
+  border: 2.5px solid #0a0a0a;
+  box-shadow: 5px 5px 0px #0a0a0a;
+  transition: box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.brutal-card-accent:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px #0a0a0a;
+}
+
+/* ─── Reveal animations ─── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-child {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.stagger-child.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero line reveal */
+.line-reveal {
+  overflow: hidden;
+}
+
+.line-reveal > span {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.line-reveal.revealed > span {
+  transform: translateY(0);
+}
+
+/* ─── Brutal tag ─── */
+
+.brutal-tag {
+  display: inline-block;
+  background: #0a0a0a;
+  color: #DDFC6B;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 2px solid #0a0a0a;
+}
+
+/* ─── Brutal link underline ─── */
+
+.brutal-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.brutal-link::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -3px;
   left: 0;
-  width: 0;
-  height: 1px;
-  background: #111;
-  transition: width 0.3s ease;
-}
-.hover-line:hover::after {
   width: 100%;
+  height: 2.5px;
+  background: #DDFC6B;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Subtle shift on hover */
-.hover-shift {
-  transition: transform 0.3s ease;
-}
-.hover-shift:hover {
-  transform: translateX(4px);
+.brutal-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
-/* Infinite scroll marquee */
+/* ─── Brutal divider ─── */
+
+.brutal-divider {
+  border: none;
+  border-top: 2.5px solid #0a0a0a;
+}
+
+/* ─── Brutal button ─── */
+
+.brutal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #DDFC6B;
+  color: #0a0a0a;
+  border: 2.5px solid #0a0a0a;
+  padding: 14px 28px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  box-shadow: 4px 4px 0px #0a0a0a;
+  cursor: pointer;
+  transition: box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.brutal-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #0a0a0a;
+}
+
+.brutal-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #0a0a0a;
+}
+
+/* ─── Marquee ─── */
+
 @keyframes scroll-left {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
 .marquee-track {
   display: flex;
   width: max-content;
   animation: scroll-left 25s linear infinite;
 }
+
 .marquee-track:hover {
   animation-play-state: paused;
 }
