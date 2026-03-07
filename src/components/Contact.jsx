@@ -49,7 +49,7 @@ export default function Contact() {
 
             <div className="mt-10 reveal">
               <a href="mailto:info@seekerlab.in" className="brutal-btn">
-                Send us a message
+                <span>Send us a message</span>
                 <span className="text-lg">&rarr;</span>
               </a>
             </div>

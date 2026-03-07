@@ -20,10 +20,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-[#F2F0E6] border-b-[2.5px] border-[#0a0a0a]'
-          : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'nav-glass' : 'bg-transparent'
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-6 lg:px-8 h-[72px] flex items-center justify-between">
@@ -55,13 +53,16 @@ export default function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-[#F2F0E6] border-t-[2.5px] border-[#0a0a0a] px-6 py-8 flex flex-col gap-6">
-          {links.map((link) => (
+        <div className="md:hidden mobile-menu-enter bg-[#F2F0E6]/95 backdrop-blur-lg border-t border-[#0a0a0a]/10 px-6 py-8 flex flex-col gap-6">
+          {links.map((link, i) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
               className="font-heading text-[18px] font-bold text-[#0a0a0a] uppercase tracking-[0.02em]"
+              style={{
+                animation: `menu-slide-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) ${i * 0.06}s both`,
+              }}
             >
               {link.label}
             </a>

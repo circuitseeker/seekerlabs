@@ -1,4 +1,5 @@
-import { useReveal, useStaggerReveal } from '../hooks/useReveal';
+import { useReveal } from '../hooks/useReveal';
+import { useCountUp } from '../hooks/useCountUp';
 
 const companies = [
   'TCS', 'Infosys', 'Wipro', 'HCL Tech', 'Tech Mahindra',
@@ -16,13 +17,28 @@ const universities = [
 ];
 
 const stats = [
-  { number: '120+', label: 'Websites & Apps Shipped' },
-  { number: '50+', label: 'ML Models Deployed' },
-  { number: '160+', label: 'Hardware Projects' },
-  { number: '90+', label: 'VFX & Editing Projects' },
-  { number: '45+', label: 'Startups Launched' },
-  { number: '430+', label: 'Happy Clients' },
+  { number: '120', suffix: '+', label: 'Websites & Apps Shipped' },
+  { number: '50', suffix: '+', label: 'ML Models Deployed' },
+  { number: '160', suffix: '+', label: 'Hardware Projects' },
+  { number: '90', suffix: '+', label: 'VFX & Editing Projects' },
+  { number: '45', suffix: '+', label: 'Startups Launched' },
+  { number: '430', suffix: '+', label: 'Happy Clients' },
 ];
+
+function StatCard({ number, suffix, label }) {
+  const { ref, count } = useCountUp(number, 2200);
+
+  return (
+    <div ref={ref} className="brutal-card p-6 md:p-8 text-center">
+      <p className="font-heading text-[36px] md:text-[48px] font-bold text-[#0a0a0a] tracking-[-0.04em] leading-none">
+        {count}{suffix}
+      </p>
+      <p className="mt-2 text-[12px] md:text-[13px] font-bold text-neutral-400 uppercase tracking-[0.08em]">
+        {label}
+      </p>
+    </div>
+  );
+}
 
 function MarqueeSet({ items }) {
   return (
@@ -54,7 +70,6 @@ function Marquee({ items, speed = 25, direction = 'left' }) {
 
 export default function LogoScroll() {
   const headRef = useReveal();
-  const statsRef = useStaggerReveal(0.08);
 
   return (
     <section className="py-20 md:py-28 px-6 lg:px-8">
@@ -62,16 +77,9 @@ export default function LogoScroll() {
         <hr className="brutal-divider mb-14" />
 
         {/* Stats */}
-        <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mb-20">
           {stats.map((stat) => (
-            <div key={stat.label} className="brutal-card p-6 md:p-8 text-center stagger-child">
-              <p className="font-heading text-[36px] md:text-[48px] font-bold text-[#0a0a0a] tracking-[-0.04em] leading-none">
-                {stat.number}
-              </p>
-              <p className="mt-2 text-[12px] md:text-[13px] font-bold text-neutral-400 uppercase tracking-[0.08em]">
-                {stat.label}
-              </p>
-            </div>
+            <StatCard key={stat.label} {...stat} />
           ))}
         </div>
 
