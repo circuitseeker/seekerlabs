@@ -30,17 +30,17 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-5" ref={listRef}>
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-5" ref={listRef}>
               {contacts.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="brutal-card p-6 stagger-child flex-1 group"
+                  className="brutal-card p-5 sm:p-6 stagger-child group"
                 >
-                  <p className="text-[11px] font-bold text-neutral-400 uppercase tracking-[0.14em] mb-3">
+                  <p className="text-[11px] font-bold text-neutral-400 uppercase tracking-[0.14em] mb-2">
                     {item.label}
                   </p>
-                  <p className="text-[17px] font-heading font-bold text-[#0a0a0a] tracking-[-0.01em] group-hover:text-neutral-600 transition-colors">
+                  <p className="text-[14px] sm:text-[16px] font-heading font-bold text-[#0a0a0a] tracking-[-0.01em] group-hover:text-neutral-600 transition-colors break-all sm:break-normal">
                     {item.value}
                   </p>
                 </a>
