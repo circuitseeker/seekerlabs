@@ -1,7 +1,9 @@
 import { useReveal, useStaggerReveal } from '../hooks/useReveal';
 
 const contacts = [
-  { label: 'Email', value: 'info@seekerlab.in', href: 'mailto:info@seekerlab.in' },
+  { label: 'General', value: 'info@seekerlab.in', href: 'mailto:info@seekerlab.in' },
+  { label: 'Sales', value: 'sales@seekerlab.in', href: 'mailto:sales@seekerlab.in' },
+  { label: 'Support', value: 'support@seekerlab.in', href: 'mailto:support@seekerlab.in' },
   { label: 'Phone', value: '+91 888 492 3815', href: 'tel:+918884923815' },
 ];
 
@@ -28,7 +30,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="mt-12 flex flex-col sm:flex-row gap-6" ref={listRef}>
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-5" ref={listRef}>
               {contacts.map((item) => (
                 <a
                   key={item.label}
