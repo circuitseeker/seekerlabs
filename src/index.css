@@ -198,12 +198,7 @@ body {
   100% { transform: translateX(-50%); }
 }
 
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: scroll-left 25s linear infinite;
-}
-
-.marquee-track:hover {
-  animation-play-state: paused;
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
