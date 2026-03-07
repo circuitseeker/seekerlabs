@@ -13,21 +13,29 @@ const tools = [
   'Unreal Engine', 'Unity', 'Substance Painter', 'ZBrush', 'Mocha Pro',
 ];
 
+function MarqueeSet({ items }) {
+  return (
+    <div className="flex items-center shrink-0">
+      {items.map((name, i) => (
+        <div key={`${name}-${i}`} className="flex-shrink-0 mx-5 md:mx-8">
+          <span className="font-heading text-[14px] md:text-[16px] font-bold text-[#0a0a0a]/12 whitespace-nowrap tracking-[-0.01em] select-none">
+            {name}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function Marquee({ items, speed, direction }) {
-  const repeated = [...items, ...items, ...items, ...items];
   return (
     <div className="overflow-hidden">
       <div
-        className="flex items-center w-max"
+        className="flex"
         style={{ animation: `scroll-${direction} ${speed}s linear infinite` }}
       >
-        {repeated.map((name, i) => (
-          <div key={`${name}-${i}`} className="flex-shrink-0 mx-5 md:mx-8">
-            <span className="font-heading text-[14px] md:text-[16px] font-bold text-[#0a0a0a]/12 whitespace-nowrap tracking-[-0.01em] select-none">
-              {name}
-            </span>
-          </div>
-        ))}
+        <MarqueeSet items={items} />
+        <MarqueeSet items={items} />
       </div>
     </div>
   );

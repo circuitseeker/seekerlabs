@@ -24,23 +24,29 @@ const stats = [
   { number: '430+', label: 'Happy Clients' },
 ];
 
+function MarqueeSet({ items }) {
+  return (
+    <div className="flex items-center shrink-0">
+      {items.map((name, i) => (
+        <div key={`${name}-${i}`} className="flex-shrink-0 mx-6 md:mx-10">
+          <span className="font-heading text-[16px] md:text-[20px] font-bold text-[#0a0a0a]/15 whitespace-nowrap tracking-[-0.02em] select-none">
+            {name}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function Marquee({ items, speed = 25, direction = 'left' }) {
-  const repeated = [...items, ...items, ...items, ...items];
   return (
     <div className="overflow-hidden">
       <div
-        className="flex items-center w-max"
-        style={{
-          animation: `scroll-${direction} ${speed}s linear infinite`,
-        }}
+        className="flex"
+        style={{ animation: `scroll-${direction} ${speed}s linear infinite` }}
       >
-        {repeated.map((name, i) => (
-          <div key={`${name}-${i}`} className="flex-shrink-0 mx-6 md:mx-10">
-            <span className="font-heading text-[16px] md:text-[20px] font-bold text-[#0a0a0a]/15 whitespace-nowrap tracking-[-0.02em] select-none">
-              {name}
-            </span>
-          </div>
-        ))}
+        <MarqueeSet items={items} />
+        <MarqueeSet items={items} />
       </div>
     </div>
   );
