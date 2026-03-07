@@ -3,15 +3,15 @@ import { useStaggerReveal } from '../hooks/useReveal';
 const services = [
   {
     num: '01',
-    title: 'Software Development',
+    title: 'Hardware & IoT',
     description:
-      'Full-stack web and mobile apps, cloud infrastructure, APIs, and scalable platforms. Production-grade engineering, startup speed.',
+      'Embedded systems, IoT prototyping, PCB design, sensor integration, and connected device development. From concept to manufacturing-ready hardware. Powered by CircuitSeekers.',
   },
   {
     num: '02',
-    title: 'Hardware & IoT',
+    title: 'Software Development',
     description:
-      'Embedded systems, prototyping, PCB design, and connected device development. From concept to manufacturing-ready hardware.',
+      'Full-stack web and mobile apps, cloud infrastructure, APIs, and scalable platforms. Production-grade engineering, startup speed. Powered by Program Bees.',
   },
   {
     num: '03',
@@ -21,7 +21,7 @@ const services = [
   },
   {
     num: '04',
-    title: 'Design & VFX',
+    title: 'Video Editing & VFX',
     description:
       'Video editing, color grading, After Effects compositing, motion graphics, VFX, sound design, and cinematic storytelling. Powered by DemonFX Studios.',
   },

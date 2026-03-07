@@ -20,25 +20,25 @@ export default function Alliance() {
             </div>
             <div className="mt-12 grid sm:grid-cols-3 gap-6" ref={cardsRef}>
               <div className="brutal-card p-8 stagger-child">
-                <div className="brutal-tag mb-5">Tech</div>
+                <div className="brutal-tag mb-5">Hardware</div>
                 <h3 className="text-[18px] font-heading font-bold text-[#0a0a0a] mb-3 tracking-[-0.02em]">
                   CircuitSeekers
                 </h3>
                 <p className="text-[13px] text-neutral-500 leading-[1.75]">
-                  The engineering and product arm. Hardware prototyping, full-stack
-                  software development, AI/ML model building, and scalable cloud
-                  infrastructure. From embedded systems to production-grade platforms.
+                  The hardware and electronics arm. Embedded systems, IoT prototyping,
+                  PCB design, sensor integration, and manufacturing-ready hardware
+                  development. From concept to production.
                 </p>
               </div>
               <div className="brutal-card-accent p-8 stagger-child">
-                <div className="brutal-tag mb-5">Growth</div>
+                <div className="brutal-tag mb-5">Software</div>
                 <h3 className="text-[18px] font-heading font-bold text-[#0a0a0a] mb-3 tracking-[-0.02em]">
                   Program Bees
                 </h3>
                 <p className="text-[13px] text-neutral-700 leading-[1.75]">
-                  The creator and growth arm. Multi-platform content strategy,
-                  creator management, brand partnerships, audience development,
-                  and monetization systems that turn attention into revenue.
+                  The software and tech arm. Full-stack web and mobile development,
+                  cloud infrastructure, APIs, AI/ML model building, and scalable
+                  platforms. Production-grade engineering at startup speed.
                 </p>
               </div>
               <div className="brutal-card p-8 stagger-child">
