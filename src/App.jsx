@@ -1,28 +1,39 @@
+import { useState, useCallback } from 'react';
+import Splash from './components/Splash';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import LogoScroll from './components/LogoScroll';
 import Services from './components/Services';
 import Vision from './components/Vision';
-import LogoScroll from './components/LogoScroll';
+import TechStack from './components/TechStack';
 import Alliance from './components/Alliance';
 import Contact from './components/Contact';
-import TechStack from './components/TechStack';
 import Footer from './components/Footer';
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true);
+
+  const handleSplashComplete = useCallback(() => {
+    setShowSplash(false);
+  }, []);
+
   return (
-    <div className="min-h-screen overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <About />
-      <LogoScroll />
-      <Services />
-      <Vision />
-      <Alliance />
-      <Contact />
-      <TechStack />
-      <Footer />
-    </div>
+    <>
+      {showSplash && <Splash onComplete={handleSplashComplete} />}
+      <div className="min-h-screen overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <About />
+        <LogoScroll />
+        <Services />
+        <Vision />
+        <TechStack />
+        <Alliance />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 }
 
