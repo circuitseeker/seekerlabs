@@ -21,7 +21,7 @@ const stats = [
 ];
 
 function Marquee({ items, speed = 25, direction = 'left' }) {
-  const doubled = [...items, ...items];
+  const repeated = [...items, ...items, ...items, ...items];
   return (
     <div className="overflow-hidden">
       <div
@@ -30,7 +30,7 @@ function Marquee({ items, speed = 25, direction = 'left' }) {
           animation: `scroll-${direction} ${speed}s linear infinite`,
         }}
       >
-        {doubled.map((name, i) => (
+        {repeated.map((name, i) => (
           <div key={`${name}-${i}`} className="flex-shrink-0 mx-6 md:mx-10">
             <span className="font-heading text-[16px] md:text-[20px] font-bold text-[#0a0a0a]/15 whitespace-nowrap tracking-[-0.02em] select-none">
               {name}
