@@ -5,6 +5,8 @@ const companies = [
   'Cognizant', 'Capgemini', 'Mphasis', 'L&T Infotech', 'Mindtree',
   'Zoho', 'Freshworks', 'Razorpay', 'Swiggy', 'Zerodha',
   'PhonePe', 'CRED', 'Postman', 'Ola', 'Meesho',
+  'Prime Focus', 'Technicolor', 'DNEG', 'MPC', 'Framestore',
+  'Tau Films', 'Phantom FX', 'Red Chillies VFX', 'BOT VFX', 'Assemblage',
 ];
 
 const universities = [
@@ -17,7 +19,9 @@ const stats = [
   { number: '120+', label: 'Websites & Apps Shipped' },
   { number: '50+', label: 'ML Models Deployed' },
   { number: '160+', label: 'Hardware Projects' },
+  { number: '90+', label: 'VFX & Editing Projects' },
   { number: '45+', label: 'Startups Launched' },
+  { number: '200+', label: 'Happy Clients' },
 ];
 
 function Marquee({ items, speed = 25, direction = 'left' }) {
@@ -52,7 +56,7 @@ export default function LogoScroll() {
         <hr className="brutal-divider mb-14" />
 
         {/* Stats */}
-        <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-5 mb-20">
+        <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mb-20">
           {stats.map((stat) => (
             <div key={stat.label} className="brutal-card p-6 md:p-8 text-center stagger-child">
               <p className="font-heading text-[36px] md:text-[48px] font-bold text-[#0a0a0a] tracking-[-0.04em] leading-none">
@@ -75,19 +79,24 @@ export default function LogoScroll() {
           </p>
         </div>
 
-        {/* Companies row 1 */}
+        {/* Companies row 1 - Tech */}
         <div className="mb-4">
           <Marquee items={companies.slice(0, 10)} speed={22} direction="left" />
         </div>
 
-        {/* Companies row 2 */}
+        {/* Companies row 2 - Startups */}
         <div className="mb-4">
-          <Marquee items={companies.slice(10)} speed={20} direction="right" />
+          <Marquee items={companies.slice(10, 20)} speed={20} direction="right" />
+        </div>
+
+        {/* Companies row 3 - Design & VFX */}
+        <div className="mb-4">
+          <Marquee items={companies.slice(20)} speed={18} direction="left" />
         </div>
 
         {/* Universities row */}
         <div>
-          <Marquee items={universities} speed={18} direction="left" />
+          <Marquee items={universities} speed={16} direction="right" />
         </div>
       </div>
     </section>

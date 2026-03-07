@@ -8,6 +8,9 @@ const tools = [
   'Figma', 'Framer', 'Vercel', 'GitHub', 'GitLab',
   'Shopify', 'WordPress', 'Flutter', 'Swift', 'Arduino',
   'Raspberry Pi', 'Twilio', 'Cloudflare', 'Supabase', 'Tailwind CSS',
+  'After Effects', 'Blender', 'Cinema 4D', 'Nuke', 'Houdini',
+  'DaVinci Resolve', 'Premiere Pro', 'Photoshop', 'Illustrator', 'Maya',
+  'Unreal Engine', 'Unity', 'Substance Painter', 'ZBrush', 'Mocha Pro',
 ];
 
 function Marquee({ items, speed, direction }) {
@@ -48,7 +51,8 @@ export default function TechStack() {
         <div className="space-y-3">
           <Marquee items={tools.slice(0, 12)} speed={28} direction="left" />
           <Marquee items={tools.slice(12, 24)} speed={24} direction="right" />
-          <Marquee items={tools.slice(24)} speed={26} direction="left" />
+          <Marquee items={tools.slice(24, 35)} speed={26} direction="left" />
+          <Marquee items={tools.slice(35)} speed={22} direction="right" />
         </div>
       </div>
     </section>

@@ -40,7 +40,7 @@ export default function Hero() {
         </h1>
         <div className="hero-sub reveal mt-10 max-w-[520px]">
           <p className="text-[16px] text-neutral-600 leading-[1.7]">
-            A combined alliance of CircuitSeekers &amp; Program Bees.
+            A combined alliance of CircuitSeekers, Program Bees &amp; DemonFX Studios.
             Established 2021. We don&rsquo;t just advise &mdash; we co&#8209;build.
           </p>
         </div>

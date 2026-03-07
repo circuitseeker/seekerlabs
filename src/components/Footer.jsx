@@ -15,8 +15,8 @@ export default function Footer() {
               SeekerLabs<span className="text-[#DDFC6B]">.</span>
             </span>
             <p className="text-[13px] text-neutral-500 mt-2 leading-[1.6]">
-              A combined alliance of CircuitSeekers<br />
-              &amp; Program Bees. Est. 2021.
+              A combined alliance of CircuitSeekers,<br />
+              Program Bees &amp; DemonFX Studios. Est. 2021.
             </p>
           </div>
           <div className="flex items-center gap-4">

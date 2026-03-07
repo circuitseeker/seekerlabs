@@ -21,6 +21,12 @@ const services = [
   },
   {
     num: '04',
+    title: 'Design & VFX',
+    description:
+      'Video editing, color grading, After Effects compositing, motion graphics, VFX, sound design, and cinematic storytelling. Powered by DemonFX Studios.',
+  },
+  {
+    num: '05',
     title: 'Product & Deployment',
     description:
       'End-to-end product lifecycle. Ideation, architecture, development, testing, CI/CD, and production deployment. We ship and we maintain.',

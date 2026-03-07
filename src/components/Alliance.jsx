@@ -15,10 +15,10 @@ export default function Alliance() {
           <div className="md:col-span-9">
             <div ref={headRef} className="reveal">
               <p className="text-[26px] md:text-[34px] lg:text-[40px] font-heading font-bold leading-[1.15] tracking-[-0.03em] text-[#0a0a0a]">
-                Two organizations,<br />one mission.
+                Three organizations,<br />one mission.
               </p>
             </div>
-            <div className="mt-12 grid sm:grid-cols-2 gap-6" ref={cardsRef}>
+            <div className="mt-12 grid sm:grid-cols-3 gap-6" ref={cardsRef}>
               <div className="brutal-card p-8 stagger-child">
                 <div className="brutal-tag mb-5">Tech</div>
                 <h3 className="text-[18px] font-heading font-bold text-[#0a0a0a] mb-3 tracking-[-0.02em]">
@@ -39,6 +39,17 @@ export default function Alliance() {
                   The creator and growth arm. Multi-platform content strategy,
                   creator management, brand partnerships, audience development,
                   and monetization systems that turn attention into revenue.
+                </p>
+              </div>
+              <div className="brutal-card p-8 stagger-child">
+                <div className="brutal-tag mb-5">Design &amp; VFX</div>
+                <h3 className="text-[18px] font-heading font-bold text-[#0a0a0a] mb-3 tracking-[-0.02em]">
+                  DemonFX Studios
+                </h3>
+                <p className="text-[13px] text-neutral-500 leading-[1.75]">
+                  The creative and post-production arm. Video editing, color grading,
+                  After Effects compositing, motion graphics, VFX, sound design,
+                  and cinematic content that tells your story.
                 </p>
               </div>
             </div>
