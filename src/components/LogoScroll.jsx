@@ -5,9 +5,9 @@ const companies = [
   'TCS', 'Infosys', 'Wipro', 'HCL Tech', 'Tech Mahindra',
   'Cognizant', 'Capgemini', 'Mphasis', 'L&T Infotech', 'Mindtree',
   'Zoho', 'Freshworks', 'Razorpay', 'Swiggy', 'Zerodha',
-  'PhonePe', 'CRED', 'Postman', 'Ola', 'Meesho',
+  'PhonePe', 'CRED', 'Postman', 'Ola', 'Nanbha Exports',
   'Prime Focus', 'Technicolor', 'DNEG', 'MPC', 'Framestore',
-  'Tau Films', 'Phantom FX', 'Red Chillies VFX', 'BOT VFX', 'Assemblage', 'Nanbha Exports',
+  'Tau Films', 'Phantom FX', 'Red Chillies VFX', 'BOT VFX', 'Assemblage',
 ];
 
 const universities = [
