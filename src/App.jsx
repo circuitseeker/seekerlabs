@@ -6,6 +6,7 @@ import Vision from './components/Vision';
 import LogoScroll from './components/LogoScroll';
 import Alliance from './components/Alliance';
 import Contact from './components/Contact';
+import TechStack from './components/TechStack';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Vision />
       <Alliance />
       <Contact />
+      <TechStack />
       <Footer />
     </div>
   );
