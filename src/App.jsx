@@ -1,6 +1,5 @@
 import { useState, useCallback } from 'react';
 import Splash from './components/Splash';
-import ScrollProgress from './components/ScrollProgress';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -22,7 +21,6 @@ function App() {
   return (
     <>
       {showSplash && <Splash onComplete={handleSplashComplete} />}
-      <ScrollProgress />
       <div className="min-h-screen overflow-x-hidden">
         <Navbar />
         <Hero />

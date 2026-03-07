@@ -7,7 +7,7 @@ const companies = [
   'Zoho', 'Freshworks', 'Razorpay', 'Swiggy', 'Zerodha',
   'PhonePe', 'CRED', 'Postman', 'Ola', 'Meesho',
   'Prime Focus', 'Technicolor', 'DNEG', 'MPC', 'Framestore',
-  'Tau Films', 'Phantom FX', 'Red Chillies VFX', 'BOT VFX', 'Assemblage',
+  'Tau Films', 'Phantom FX', 'Red Chillies VFX', 'BOT VFX', 'Assemblage', 'Nanbha Exports',
 ];
 
 const universities = [
