@@ -21,7 +21,7 @@ const stats = [
   { number: '160+', label: 'Hardware Projects' },
   { number: '90+', label: 'VFX & Editing Projects' },
   { number: '45+', label: 'Startups Launched' },
-  { number: '200+', label: 'Happy Clients' },
+  { number: '430+', label: 'Happy Clients' },
 ];
 
 function Marquee({ items, speed = 25, direction = 'left' }) {
