@@ -1,3 +1,29 @@
+const shlokas = [
+  'Om Namah Shivaya',
+  'Namma Parvathi Pathiye Hara Hara Mahadeva',
+  'Om Gan Ganapataye Namah',
+  'Lokah Samastah Sukhino Bhavantu',
+  'Sarve Bhavantu Sukhinah',
+  'Vasudhaiva Kutumbakam',
+  'Om Namo Narayanaya',
+  'Har Har Mahadev',
+];
+
+function ShlokaSet() {
+  return (
+    <div className="flex items-center shrink-0">
+      {shlokas.map((s, i) => (
+        <span
+          key={`${s}-${i}`}
+          className="flex-shrink-0 mx-8 font-heading text-[13px] md:text-[15px] font-bold text-[#0a0a0a]/10 whitespace-nowrap tracking-[0.06em] uppercase select-none"
+        >
+          {s}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 const socials = [
   { label: 'X', href: 'https://x.com/pradeep_9477' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pradeepvarma99/' },
@@ -37,6 +63,14 @@ export default function Footer() {
           <p className="text-[12px] text-neutral-400 font-medium tracking-[0.02em]">
             &copy; {new Date().getFullYear()} SeekerLabs. All rights reserved.
           </p>
+        </div>
+      </div>
+
+      {/* Sacred scrolling shloka */}
+      <div className="mt-10 pb-6 overflow-hidden">
+        <div className="flex" style={{ animation: 'scroll-left 30s linear infinite' }}>
+          <ShlokaSet />
+          <ShlokaSet />
         </div>
       </div>
     </footer>
