@@ -39,29 +39,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-
-      {/* Sacred closing */}
-      <div className="mt-16 pb-10 text-center">
-        <p className="font-heading text-[20px] md:text-[28px] font-bold tracking-[-0.02em] text-[#0a0a0a]">
-          Namma Parvathi Pathiye Hara Hara Mahadeva
-        </p>
-        <div className="mt-8 max-w-[600px] mx-auto px-6">
-          <p className="text-[12px] md:text-[13px] leading-[2.2] text-neutral-400 italic tracking-[0.02em]">
-            Yogeshwaraya Mahadevaya<br />
-            Shivaya Dhimahi<br />
-            Shankaraya Sarvadevaya<br />
-            Shivaya Dhimahi<br /><br />
-            Vandeham Shambhum Umapathim<br />
-            Sura Gurum Vandeham Shambhum Umapathim<br /><br />
-            Bhasmanga Ragaya Maheshwaraya<br />
-            Shivaya Dhimahi<br />
-            Vashishta Naradaadi Vandyaya<br />
-            Shivaya Dhimahi<br /><br />
-            Vandeham Shambhum Umapathim<br />
-            Sura Gurum Vandeham Shambhum Umapathim
-          </p>
-        </div>
-      </div>
     </footer>
   );
 }
