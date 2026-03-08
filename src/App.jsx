@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react';
 import Splash from './components/Splash';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Tagline from './components/Tagline';
 import About from './components/About';
 import LogoScroll from './components/LogoScroll';
 import Services from './components/Services';
@@ -24,6 +25,7 @@ function App() {
       <div className="min-h-screen overflow-x-hidden">
         <Navbar />
         <Hero />
+        <Tagline />
         <About />
         <LogoScroll />
         <Services />
