@@ -1,29 +1,3 @@
-const shlokas = [
-  'Om Namah Shivaya',
-  'Namma Parvathi Pathiye Hara Hara Mahadeva',
-  'Om Gan Ganapataye Namah',
-  'Lokah Samastah Sukhino Bhavantu',
-  'Sarve Bhavantu Sukhinah',
-  'Vasudhaiva Kutumbakam',
-  'Om Namo Narayanaya',
-  'Har Har Mahadev',
-];
-
-function ShlokaSet() {
-  return (
-    <div className="flex items-center shrink-0">
-      {shlokas.map((s, i) => (
-        <span
-          key={`${s}-${i}`}
-          className="flex-shrink-0 mx-8 font-heading text-[13px] md:text-[15px] font-bold text-[#0a0a0a]/10 whitespace-nowrap tracking-[0.06em] uppercase select-none"
-        >
-          {s}
-        </span>
-      ))}
-    </div>
-  );
-}
-
 const socials = [
   { label: 'X', href: 'https://x.com/pradeep_9477' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pradeepvarma99/' },
@@ -66,11 +40,26 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Sacred scrolling shloka */}
-      <div className="mt-10 pb-6 overflow-hidden">
-        <div className="flex" style={{ animation: 'scroll-left 30s linear infinite' }}>
-          <ShlokaSet />
-          <ShlokaSet />
+      {/* Sacred closing */}
+      <div className="mt-16 pb-10 text-center">
+        <p className="font-heading text-[20px] md:text-[28px] font-bold tracking-[-0.02em] text-[#0a0a0a]">
+          Namma Parvathi Pathiye Hara Hara Mahadeva
+        </p>
+        <div className="mt-8 max-w-[600px] mx-auto px-6">
+          <p className="text-[12px] md:text-[13px] leading-[2.2] text-neutral-400 italic tracking-[0.02em]">
+            Yogeshwaraya Mahadevaya<br />
+            Shivaya Dhimahi<br />
+            Shankaraya Sarvadevaya<br />
+            Shivaya Dhimahi<br /><br />
+            Vandeham Shambhum Umapathim<br />
+            Sura Gurum Vandeham Shambhum Umapathim<br /><br />
+            Bhasmanga Ragaya Maheshwaraya<br />
+            Shivaya Dhimahi<br />
+            Vashishta Naradaadi Vandyaya<br />
+            Shivaya Dhimahi<br /><br />
+            Vandeham Shambhum Umapathim<br />
+            Sura Gurum Vandeham Shambhum Umapathim
+          </p>
         </div>
       </div>
     </footer>
