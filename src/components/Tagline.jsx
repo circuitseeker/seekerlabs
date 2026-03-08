@@ -3,6 +3,7 @@ import { useReveal } from '../hooks/useReveal';
 export default function Tagline() {
   const ref1 = useReveal(0.2);
   const ref2 = useReveal(0.2);
+  const ref3 = useReveal(0.2);
 
   return (
     <section className="py-20 md:py-32 px-6 lg:px-8 overflow-hidden">
@@ -22,6 +23,11 @@ export default function Tagline() {
         <div ref={ref2} className="reveal mt-4 md:mt-6">
           <p className="font-heading text-[20px] sm:text-[28px] md:text-[36px] lg:text-[42px] font-bold leading-[1.1] tracking-[-0.03em] text-neutral-400">
             Then people build the business.
+          </p>
+        </div>
+        <div ref={ref3} className="reveal mt-10 md:mt-14">
+          <p className="text-[14px] md:text-[16px] italic text-neutral-400 tracking-[0.02em]">
+            &ldquo;Opportunity is the currency of life.&rdquo;
           </p>
         </div>
       </div>
