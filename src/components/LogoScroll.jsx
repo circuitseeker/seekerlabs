@@ -1,17 +1,8 @@
 import { useReveal } from '../hooks/useReveal';
 import { useCountUp } from '../hooks/useCountUp';
 
-const companies = [
-  'TCS', 'Infosys', 'Wipro', 'HCL Tech', 'Tech Mahindra',
-  'Cognizant', 'Capgemini', 'Mphasis', 'L&T Infotech', 'Mindtree',
-  'Zoho', 'Freshworks', 'Razorpay', 'Swiggy', 'Zerodha',
-  'PhonePe', 'CRED', 'Postman', 'Ola', 'Nanbha Exports',
-  'Prime Focus', 'Technicolor', 'DNEG', 'MPC', 'Framestore',
-  'Tau Films', 'Phantom FX', 'Red Chillies VFX', 'BOT VFX', 'Assemblage',
-];
-
-const universities = [
-  'LPU', 'Pearl Academy', 'VIT Vellore', 'SRM Chennai',
+const names = [
+  'Nanbha Exports', 'LPU', 'Pearl Academy', 'VIT Vellore', 'SRM Chennai',
   'IIIT Hyderabad', 'Manipal University', 'Amity University',
   'Christ University', 'Symbiosis', 'Chandigarh University',
 ];
@@ -93,24 +84,8 @@ export default function LogoScroll() {
           </p>
         </div>
 
-        {/* Companies row 1 - Tech */}
-        <div className="mb-4">
-          <Marquee items={companies.slice(0, 10)} speed={22} direction="left" />
-        </div>
-
-        {/* Companies row 2 - Startups */}
-        <div className="mb-4">
-          <Marquee items={companies.slice(10, 20)} speed={20} direction="right" />
-        </div>
-
-        {/* Companies row 3 - Design & VFX */}
-        <div className="mb-4">
-          <Marquee items={companies.slice(20)} speed={18} direction="left" />
-        </div>
-
-        {/* Universities row */}
         <div>
-          <Marquee items={universities} speed={16} direction="right" />
+          <Marquee items={names} speed={18} direction="left" />
         </div>
       </div>
     </section>
