@@ -76,11 +76,8 @@ export default function LogoScroll() {
 
         {/* Heading */}
         <div ref={headRef} className="reveal text-center mb-12">
-          <p className="text-[13px] font-bold text-neutral-400 uppercase tracking-[0.14em]">
-            Trusted by professionals from
-          </p>
-          <p className="mt-3 text-[20px] md:text-[26px] font-heading font-bold text-[#0a0a0a] tracking-[-0.03em]">
-            Leading companies &amp; top universities
+          <p className="text-[20px] md:text-[26px] font-heading font-bold text-[#0a0a0a] tracking-[-0.03em]">
+            Built with people from
           </p>
         </div>
 
