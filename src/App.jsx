@@ -11,6 +11,7 @@ import TechStack from './components/TechStack';
 import Alliance from './components/Alliance';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import VoiceAgent from './components/VoiceAgent';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -35,6 +36,7 @@ function App() {
         <Contact />
         <Footer />
       </div>
+      <VoiceAgent />
     </>
   );
 }
