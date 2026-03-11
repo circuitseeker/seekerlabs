@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dreamonstudios.seekerlab.in/sitemap.xml
