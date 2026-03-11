@@ -23,7 +23,7 @@ const services = [
     num: '04',
     title: 'Video Editing & VFX',
     description:
-      'Video editing, color grading, After Effects compositing, motion graphics, VFX, sound design, and cinematic storytelling. Powered by DemonFX Studios.',
+      'Video editing, color grading, After Effects compositing, motion graphics, VFX, sound design, and cinematic storytelling. Powered by DreamonFX Studios.',
   },
   {
     num: '05',

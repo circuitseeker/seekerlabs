@@ -16,8 +16,19 @@ export default function Footer() {
             </span>
             <p className="text-[13px] text-neutral-500 mt-2 leading-[1.6]">
               A combined alliance of CircuitSeekers,<br />
-              Program Bees &amp; DemonFX Studios. Est. 2021.
+              ProgramBee &amp; DreamonFX Studios. Est. 2021.
             </p>
+            <div className="flex flex-wrap items-center gap-3 mt-4">
+              <a href="https://circuitseekers.seekerlab.in" target="_blank" rel="noopener noreferrer" className="text-[12px] font-bold tracking-[0.04em] px-3 py-1.5 border-[2px] border-[#0a0a0a] hover:bg-[#4FC3F7] transition-colors">
+                Circuit<span style={{ color: '#4FC3F7' }}>Seekers</span>
+              </a>
+              <a href="https://programbee.seekerlab.in" target="_blank" rel="noopener noreferrer" className="text-[12px] font-bold tracking-[0.04em] px-3 py-1.5 border-[2px] border-[#0a0a0a] hover:bg-[#FFB74D] transition-colors">
+                Program<span style={{ color: '#FFB74D' }}>Bee</span>
+              </a>
+              <a href="https://dreamonstudios.seekerlab.in" target="_blank" rel="noopener noreferrer" className="text-[12px] font-bold tracking-[0.04em] px-3 py-1.5 border-[2px] border-[#0a0a0a] hover:bg-[#EF5350] transition-colors">
+                Dreamon<span style={{ color: '#EF5350' }}>FX</span>
+              </a>
+            </div>
           </div>
           <div className="flex items-center gap-4">
             {socials.map((social) => (

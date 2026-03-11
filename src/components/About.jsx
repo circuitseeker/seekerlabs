@@ -22,7 +22,7 @@ export default function About() {
             <div ref={bodyRef} className="reveal">
               <div className="mt-12 brutal-card p-8 md:p-10">
                 <p className="text-[15px] text-neutral-600 leading-[1.8]">
-                  A combined alliance of CircuitSeekers, Program Bees, and DemonFX Studios, established in 2021.
+                  A combined alliance of CircuitSeekers, Program Bees, and DreamonFX Studios, established in 2021.
                   We bring together deep technical capability with growth expertise and world-class design. Our model
                   is simple: we embed ourselves into your startup, share the work, share the risk,
                   and build something that lasts.

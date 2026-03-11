@@ -4,7 +4,6 @@ const contacts = [
   { label: 'General', value: 'info@seekerlab.in', href: 'mailto:info@seekerlab.in' },
   { label: 'Sales', value: 'sales@seekerlab.in', href: 'mailto:sales@seekerlab.in' },
   { label: 'Support', value: 'support@seekerlab.in', href: 'mailto:support@seekerlab.in' },
-  { label: 'Phone', value: '+91 888 492 3815', href: 'tel:+918884923815' },
 ];
 
 export default function Contact() {
